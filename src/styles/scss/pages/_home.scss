@@ -1,0 +1,31 @@
+@mixin home {
+  .container {
+    @include heightAndWidth(300px, 200px);
+    position: relative;
+    z-index: 0;
+    .leftSquare,
+    .rightSquare {
+      position: absolute;
+      background-color: $secondary-bg-color;
+      @include heightAndWidth(230px, 40px);
+    }
+
+    .leftSquare {
+      @include positionAndZIndex(0, 0, 3, "bottom-left");
+    }
+
+    .rightSquare {
+      @include positionAndZIndex(0, 0, 1, "top-right");
+    }
+
+    .centerSquare {
+      background-color: $tertiary-bg-color;
+      @include heightAndWidth(159px, 44px);
+      transform: skew(40deg);
+      top: 70px;
+      position: absolute;
+      left: 80px;
+      z-index: 2;
+    }
+  }
+}

@@ -1,0 +1,8 @@
+@import "variables";
+@import "mixins";
+@import "pages/home";
+
+body {
+  background-color: $primary-bg-color;
+  @include home;
+}

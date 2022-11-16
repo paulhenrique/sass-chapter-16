@@ -1,0 +1,38 @@
+body {
+  background-color: #998235;
+}
+body .container {
+  height: 300px;
+  width: 200px;
+  position: relative;
+  z-index: 0;
+}
+body .container .leftSquare,
+body .container .rightSquare {
+  position: absolute;
+  background-color: #0b2429;
+  height: 230px;
+  width: 40px;
+}
+body .container .leftSquare {
+  bottom: 0;
+  left: 0;
+  z-index: 3;
+}
+body .container .rightSquare {
+  top: 0;
+  right: 0;
+  z-index: 1;
+}
+body .container .centerSquare {
+  background-color: #fcbe5c;
+  height: 159px;
+  width: 44px;
+  transform: skew(40deg);
+  top: 70px;
+  position: absolute;
+  left: 80px;
+  z-index: 2;
+}
+
+/*# sourceMappingURL=global.css.map */

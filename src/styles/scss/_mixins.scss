@@ -1,0 +1,20 @@
+@mixin heightAndWidth($height, $width) {
+  height: $height;
+  width: $width;
+}
+
+@mixin positionAndZIndex(
+  $horizontal,
+  $vertical,
+  $zIndex,
+  $position: "bottom-left"
+) {
+  @if ($position == "bottom-left") {
+    bottom: $vertical;
+    left: $horizontal;
+  } @else {
+    top: $vertical;
+    right: $horizontal;
+  }
+  z-index: $zIndex;
+}
